@@ -1,87 +1,127 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
 
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div> -->
-    <div>this is my first vite project</div>
-  </header>
-
-  <RouterView />
+    <div class=" flex flex-col gap-4 m-auto">
+      <div className="flex gap-[23px]">
+        <Category :class="fruit.bg" v-for="(fruit, index) in fruits" :key="index" :image="fruit.imageUrl" :name="fruit.name" :description="fruit.description" />
+      </div>
+      <div class="flex gap-4">
+        <Promotion :class="promotion.color" v-for="(promotion, index) in prom" :key="index" :description="promotion.description" :bg="promotion.bg" :image="promotion.image" ></Promotion>
+      </div>
+    </div>
 </template>
 
-<style scoped>
-header {
-  background-color: white;
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+<script setup>
+  import Category from './components/Category.vue'
+  import Promotion from './components/Promotion.vue'
+  // import Mybutton from './components/button.vue'
+  import img1 from './assets/cat-13 1.png'
+  import img2 from './assets/cat-11 1.png'
+  import img3 from './assets/cat-12 1.png'
+  import img4 from './assets/cat-9 1.png'
+  import img5 from './assets/cat-3 1.png'
+  import img6 from './assets/cat-4 1.png'
+  import img7 from './assets/cat-1 4.png'
+  import img8 from './assets/cat-15 1.png'
+  import img9 from './assets/cat-14 1.png'
+  import img10 from './assets/cat-7 1.png'
+  import bigpic1 from './assets/Cms-04 1.png'
+  import bigpic2 from './assets/Cat-01 1.png'
+  import bigpic3 from './assets/Cms-03 1.png'
+  
+  
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
+  const prom=[
+    {
+      name: "1",
+      image: bigpic1,
+      description: "Everyday Fresh & Clean with our Product",
+      bg: "bg-green-300",
+      color:"bg-[#F0E8D5]",
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
+    },
+    {
+      name: "2",
+      image: bigpic2,
+      description: "Make your Brackfast Easy and Healthy",
+      bg: "bg-green-300",
+      color: "bg-[#F3E8E8]",
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
+    },
+    {
+      name: "3",
+      image: bigpic3,
+      description: "The best Organic Product Online",
+      bg: "bg-yellow-300",
+      color: "bg-[#E7EAF3]",
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
+    },
+  ]
 
-nav a:first-of-type {
-  border: 0;
-}
+  const fruits = [
+    {
+      name: 'Cake & Milk',
+      imageUrl: img1,
+      description: '14 items',
+      bg: "bg-[#F2FCE4] border-2 hover:border-[#81B13D]",
+    },
+    {
+      name: 'Peach',
+      imageUrl: img2,
+      description: '17 items',
+      bg: "bg-[#FFFCEB]",
+    },
+    {
+      name: 'Oganic Kiwi',
+      imageUrl: img3,
+      description: '21 items',
+      bg: "bg-[#ECFFEC]",
+    },
+    {
+      name: 'Red apples',
+      imageUrl: img4,
+      description: '68 items',
+      bg: "bg-[#FEEFEA]",
+    },
+    {
+      name: 'Snack',
+      imageUrl: img5,
+      description: '34 items',
+      bg: "bg-[#FFF3EB]",
+    },
+    {
+      name: 'Black plum',
+      imageUrl: img6,
+      description: '25 items',
+      bg: "bg-[#FFF3FF]",
+    },
+    {
+      name: 'Vegetable',
+      imageUrl: img7,
+      description: '65 items',
+      bg: "bg-[#F2FCE4]",
+    }, 
+    {
+      name: 'Headphone',
+      imageUrl: img8,
+      description: '33 items',
+      bg: "bg-[#FFFCEB]",
+    },
+    {
+      name: 'Cake & Milk',
+      imageUrl: img9,
+      description: '54 items',
+      bg: "bg-[#F2FCE4]"
+    },
+    {
+      name: 'Orange',
+      imageUrl: img10,
+      description: '10 items',
+      bg: "bg-[#FFF3FF]"
+    },
+    
+];
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>
+    
+</script>
