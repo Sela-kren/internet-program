@@ -14,6 +14,15 @@ import img9 from '../assets/cat-14 1.png'
 import img10 from '../assets/cat-7 1.png'
 
 import Pimg1 from '../assets/18 1.png'
+import Pimg2 from '../assets/1 902.png'
+import Pimg3 from '../assets/3 389454.png'
+import Pimg4 from '../assets/5 7.png'
+import Pimg5 from '../assets/7 1.png'
+import Pimg6 from '../assets/8 1.png'
+import Pimg7 from '../assets/9 1.png'
+import Pimg8 from '../assets/11 1.png'
+import Pimg9 from '../assets/12 1.png'
+import Pimg10 from '../assets/16 1.png'
 
 import { defineStore  } from 'pinia'
 
@@ -126,12 +135,137 @@ export const useEStore = defineStore('todoList', {
           name: "Seeds of Change Organic Quinoa, Brown, & Red Rice",        
           rate: 4,        
           description: "500 gram",       
-          sellPrice: "3",        
+          sellPrice: "2.80",        
           discountPercentage: 17,       
           discountPrice: "2.57",
-          buy: "1",
-        }
-      ]
+          buy: "1", 
+          color: "bg-green-400",
+         
+        },
+        {        
+          id: 2,        
+          tag: "Hot",       
+          image: Pimg2,        
+          category: 3,        
+          name: "All Natural Itlalian-Style Chicken MeatBalls",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.51",
+          buy: "0",
+          color: "bg-red-400"
+        },   
+        {        
+          id: 3,        
+          tag: "Sale",       
+          image: Pimg3,        
+          category: 3,        
+          name: "Angie's Boomchickapop Sweet & Salty Kettle Corn",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.57",
+          buy: "0",
+          color: "bg-yellow-400"
+        },
+        {        
+          id: 4,        
+          tag: "",       
+          image: Pimg4,        
+          category: 3,        
+          name: "Foster Farms Takeout Crispy Classic Buffalo Wings",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.57",
+          buy: "0",
+        },
+        {        
+          id: 5,        
+          tag: "0",       
+          image: Pimg5,        
+          category: 3,        
+          name: "Blue Diamond Almonds Lightly Salted Vegetable",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.57",
+          buy: "0",
+        },
+        {        
+          id: 6,        
+          tag: "",       
+          image: Pimg6,        
+          category: 3,        
+          name: "Chobani Complete Valnilla Greek Yougurt",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.51",
+          buy: "0",
+        },
+        {        
+          id: 7,        
+          tag: "Sale",       
+          image: Pimg7,        
+          category: 3,        
+          name: "Canada Dry Ginger Ale - 2 L Bottle - 200ml - 400g",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.51",
+          buy: "0",
+          color: "bg-yellow-400",
+        },
+        {        
+          id: 8,        
+          tag: "",       
+          image: Pimg8,        
+          category: 3,        
+          name: "Encore Seafood Stuffed Alaskan Salmon",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.51",
+          buy: "0",
+        },
+        {        
+          id: 9,        
+          tag: "",       
+          image: Pimg9,        
+          category: 3,        
+          name: "Gorton's Beer Battered Fish Fillets with soft paper",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.57",
+          buy: "0",
+        },
+        {        
+          id: 10,        
+          tag: "Hot",       
+          image: Pimg10,        
+          category: 3,        
+          name: "Haagen-Dazs Caramel Cone Ice Cream Ketchup",        
+          rate: 4,        
+          description: "500 gram",       
+          sellPrice: "2.80",        
+          discountPercentage: 17,       
+          discountPrice: "2.51",
+          buy: "0",
+          color: "bg-red-400"
+        },
+      
+      ],
+      groups:["Milks & Dairies", "Coffes & Teas", "Pet Foods" , "meats" , "Vegetable" , "Furits" ] 
      
     }),
 })
