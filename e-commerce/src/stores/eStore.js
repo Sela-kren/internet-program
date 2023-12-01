@@ -265,7 +265,7 @@ export const useEStore = defineStore('todoList', {
         },
       
       ],
-      groups:["Milks & Dairies", "Coffes & Teas", "Pet Foods" , "meats" , "Vegetable" , "Furits" ] 
-     
+      groups:["Milks & Dairies", "Coffes & Teas", "Pet Foods" , "meats" , "Vegetable" , "Furits" ],
+      
     }),
 })

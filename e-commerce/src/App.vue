@@ -1,6 +1,6 @@
 <template>
   <div class=" flex flex-col gap-4 m-auto">
-    <Menu title="Fearture Category"></Menu>
+    <Topbar></Topbar>
     <div className="flex gap-[23px] mt-3">
       <!-- <Category :class="fruit.bg" v-for="(fruit, index) in fruits" :key="index" :image="fruit.imageUrl" :name="fruit.name" :description="fruit.description" /> -->
       <Category :class="category.bg" v-for="category in categories"  :image="category.imageUrl" :name="category.name" :description="category.description" />
@@ -33,7 +33,7 @@
   import Category from './components/Category.vue';
   import Promotion from './components/Promotion.vue';
   import Menu from './components/menu.vue';
-
+  import Topbar from './components/Topbar.vue'
   
 
   export default {
@@ -43,6 +43,7 @@
       Menu,
       Category,
       Product,
+      Topbar,
     },
     computed: {
       ...mapState(useEStore,['prom']),
