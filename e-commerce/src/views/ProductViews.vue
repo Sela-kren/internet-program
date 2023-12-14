@@ -56,10 +56,10 @@
                 <div class="w-[42px] h-[42px] flex justify-center items-center bg-green-300 rounded-full">
                     <fa icon="chevron-left" class=" text-xl text-white" /> 
                 </div>
-                <img src="../assets/3 389455.png" alt="" class="w-[118px] h-[118px] object-contain border-2 border-green-300 rounded-xl">
-                <img src="../assets/zppb2xd1 1.png" alt="" class="w-[118px] h-[118px] object-contain border-2 border-gray-100 rounded-xl">
-                <img src="../assets/6 1.png" alt="" class="w-[118px] h-[118px] object-contain border-2 border-gray-100 rounded-xl">
-                <img src="../assets/7 1.png" alt="" class="w-[118px] h-[118px] object-contain border-2 border-gray-100 rounded-xl">
+                <img src="../assets/orange.png" alt="" class="w-[118px] h-[118px] object-contain border-2 border-green-300 rounded-xl">
+                <img src="../assets/zppb2xd1.png" alt="" class="w-[118px] h-[118px] object-contain border-2 border-gray-100 rounded-xl">
+                <img src="../assets/61.png" alt="" class="w-[118px] h-[118px] object-contain border-2 border-gray-100 rounded-xl">
+                <img src="../assets/71.png" alt="" class="w-[118px] h-[118px] object-contain border-2 border-gray-100 rounded-xl">
                 <div class="w-[42px] h-[42px] flex justify-center items-center bg-gray-100 rounded-full">
                     <fa icon="chevron-right" class=" text-xl text-gray-400" /> 
                 </div>
