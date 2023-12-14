@@ -266,6 +266,64 @@ export const useEStore = defineStore('todoList', {
       
       ],
       groups:["Milks & Dairies", "Coffes & Teas", "Pet Foods" , "meats" , "Vegetable" , "Furits" ],
+    
+      Menuitems: [
+        {
+          title: "account",
+          icon: "user",
+          type: "header"
+        },
+        {
+          title: "Compare",
+          icon: "rotate",
+          type: "header"
+        },
+        {
+          title: "whishlist",
+          icon: "heart",
+          type: "header"
+        },
+        {
+          title: "cart",
+          icon: "cart-shopping",
+          type: "header"
+        },
+      ],
+
+      ListItem: [
+        {
+          title: "home",
+          
+        },
+        {
+          title: "Food",
+          icon: "chevron-down",
+        },
+        {
+          title: "Vegetable",
+          icon: "chevron-down",
+        }
+        ,
+        {
+          title: "Drink",
+        },
+        {
+          title: "Cookies",
+        },
+        {
+          title: "Meat & Seafood",
+          icon: "chevron-down"
+        },
+        {
+          title: "Bakary",
+  
+        }
+        
+
+      ]
       
+
+
+
     }),
 })

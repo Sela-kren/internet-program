@@ -4,9 +4,11 @@
             <p class=" text-center  font-medium text-lg">All categories</p>
             <img src="../assets/fi-rs-angle-small-down.png" class="h-[7px] w-[12px] translate-y-[2px]" alt="">
         </div>
-        <div class="w-fit h-fit ">
-            <input type="text" placeholder="Search" class=" border-l pl-3">
+        <div class="w- h-fit ">
+            <input type="text" placeholder="Search" class=" w-[500px] outline-none border-l pl-3">
         </div>
+        <fa icon="search" class="text-lg" ></fa>
+        
     </div>
    
 
