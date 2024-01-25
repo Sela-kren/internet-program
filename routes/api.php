@@ -5,10 +5,23 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AuthController;
+
+
 
 Route::get('/products', [ProductController::class, 'index']);
 
 Route::post('/products', [ProductController::class, 'store']);
+
+
+Route::post('/register', [AuthController::class, 'register']);
+// Login
+Route::post('/login', [AuthController::class, 'login']);
+
+Route::get('/verify-otp', [AuthController::class, 'verifyOTP'])->name('verify.otp');
+Route::middleware('auth:api')->get('/profile', [AuthController::class, 'getProfile']);
+
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
