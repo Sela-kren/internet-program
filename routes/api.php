@@ -19,9 +19,11 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/verify-otp', [AuthController::class, 'verifyOTP'])->name('verify.otp');
-Route::middleware('auth:api')->get('/profile', [AuthController::class, 'getProfile']);
-
-
+// Route::middleware('auth:api')->get('/profile', [AuthController::class, 'getProfile']);
+Route::middleware('auth:api')->get('/user',function (Request $request){
+    return $request->user();
+});
+Route::post('/login1', [AuthController::class, 'login1']);
 /*
 |--------------------------------------------------------------------------
 | API Routes
